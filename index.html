@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+
+<html lang="es" style="scroll-behavior:smooth"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#768b70", "on-tertiary": "#ffffff", "primary-fixed-dim": "#e3bfb2", "on-secondary-fixed": "#3a0a00", "tertiary-fixed-dim": "#b7cdaf", "on-primary-fixed-variant": "#5a4137", "on-tertiary-fixed": "#0e1f0c", "secondary": "#9c4328", "error-container": "#ffdad6", "error": "#ba1a1a", "surface": "#fdf9f3", "background": "#fdf9f3", "outline": "#827470", "on-primary-container": "#9e7e73", "tertiary-container": "#0f210e", "surface-tint": "#74584e", "secondary-fixed-dim": "#ffb59f", "on-background": "#1c1c18", "on-secondary-container": "#76270e", "primary-container": "#2c1810", "surface-dim": "#dddad4", "on-error": "#ffffff", "on-surface-variant": "#504440", "secondary-fixed": "#ffdbd1", "on-surface": "#1c1c18", "surface-variant": "#e6e2dc", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#7d2c13", "primary": "#090100", "on-primary": "#ffffff", "inverse-surface": "#31302d", "on-tertiary-fixed-variant": "#394c35", "surface-container": "#f1ede7", "primary-fixed": "#ffdbce", "on-error-container": "#93000a", "secondary-container": "#ff8f6e", "tertiary": "#000400", "tertiary-fixed": "#d2e9ca", "surface-container-high": "#ebe8e2", "surface-container-highest": "#e6e2dc", "outline-variant": "#d3c3be", "on-primary-fixed": "#2a170f", "surface-container-low": "#f7f3ed", "surface-bright": "#fdf9f3", "inverse-on-surface": "#f4f0ea", "inverse-primary": "#e3bfb2", "on-secondary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "3rem", "margin-mobile": "1.25rem", "space-xl": "3rem", "gutter-mobile": "1rem", "space-md": "1.25rem", "space-sm": "0.75rem", "space-xs": "0.375rem", "space-lg": "2rem", "gutter": "1.5rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "display-lg": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"] }, "fontSize": { "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "label-lg": ["15px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}], "headline-lg": ["36px", {"lineHeight": "44px", "fontWeight": "600"}], "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-md": ["26px", {"lineHeight": "34px", "fontWeight": "500"}], "label-md": ["13px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "500"}], "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}], "display-lg-mobile": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "600"}] } } } }</script><style>.menu-tab-btn.bg-primary-container,.menu-tab-btn.bg-primary-container:hover{background-color:#2c1810;color:#fdf9f3}</style></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(44,24,16,0.05)]"><div class="h-20 max-w-7xl mx-auto px-gutter-mobile lg:px-margin flex items-center justify-between"><div class="flex items-center gap-3"><a href="#inicio" class="flex items-center gap-3"><img alt="Logo Delicias de Pucará" class="h-16 w-auto object-contain" src="logo.png"/><span class="flex flex-col items-center leading-none uppercase" style="font-family:'Cinzel',serif;color:#4d5a3d"><span class="text-[26px] sm:text-[34px] font-bold tracking-[0.06em]">Delicias</span><span class="text-[13px] sm:text-[16px] font-semibold tracking-[0.12em] mt-1">de Pucará</span></span></a></div><nav class="hidden lg:flex items-center gap-1" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-full"><a aria-current="page" class="px-4 py-2 transition-colors bg-surface-container-high text-primary font-semibold rounded-full" data-path="inicio" href="#inicio">Inicio</a><a class="px-4 py-2 text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="carta" href="#carta">Carta</a><a class="px-4 py-2 text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="nosotros" href="#nosotros">Nosotros</a><a class="px-4 py-2 text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="ubicacion" href="#ubicacion">Ubicación</a><a class="px-4 py-2 text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><div class="flex items-center gap-3"><a class="hidden sm:inline-flex items-center gap-2 bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors rounded-full px-5 py-2.5 font-label-md text-label-md shadow-[0_4px_14px_rgba(156,67,40,0.25)]" href="https://wa.me/56987654321" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>Pedir por WhatsApp</span></a><button aria-label="Abrir menú" class="lg:hidden p-2 rounded-lg text-on-surface hover:bg-surface-container transition-colors" id="mobile-nav-toggle" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div><div class="hidden lg:hidden bg-surface-container-low px-gutter-mobile py-4 shadow-[0_8px_16px_rgba(44,24,16,0.06)]" id="mobile-menu"><nav class="flex flex-col gap-1" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg"><a aria-current="page" class="px-3 py-2 transition-colors bg-surface-container-high text-primary font-semibold rounded-lg" data-path="inicio" href="#inicio">Inicio</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="carta" href="#carta">Carta</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="nosotros" href="#nosotros">Nosotros</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="ubicacion" href="#ubicacion">Ubicación</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="contacto" href="#contacto">Contacto</a><div class="pt-2 sm:hidden"><a class="w-full flex items-center justify-center gap-2 bg-secondary text-on-secondary rounded-full py-2.5 font-label-md text-label-md shadow-sm" href="https://wa.me/56987654321" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>Pedir por WhatsApp</span></a></div></nav></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full -mt-20 overflow-hidden bg-primary-container" id="inicio">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-45 scale-105 transition-transform duration-1000 ease-out" data-alt="Sunlit specialty coffee shop interior in Santiago Chile with rustic solid wood bar, handmade earthy ceramic mugs with latte art, thriving lush indoor plants, warm morning natural rays pouring through high wooden frame windows, and cozy inviting neighborhood cafe atmosphere in warm tones" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgOQzBLY60BJfTgXsNdKwgWcE2b8YSIUbIzr9pIL7qHUXX8aAyV2yokCQVqH8SP2HP99yImFl4ShAj6jroUsVerEJICT2VyBFcI5VFAC4e3R-IfVICJAu-coqbB1oCnYJGCHIiFRj36x5y2KTbUMDAs5EhPmHovIAHSr3eP3qlGWOUmSFnPsLc6TYurgObhswkbjeSGOll7rdRVi0rEUyedVIsMEMUGhJ44Bt8vhdlZUrES6DKwvspeg')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/70 to-primary-container/40"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-secondary/20 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-gutter-mobile lg:px-margin pt-36 pb-20 lg:pt-44 lg:pb-32 flex flex-col items-start">
+<h1 class="font-display-lg text-display-lg text-surface max-w-3xl leading-[1.12] mb-6 tracking-tight drop-shadow-sm">
+        El calor de tu café favorito, en el <span class="italic font-normal text-secondary-fixed">corazón de Ñuñoa</span>.
+      </h1>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mb-10 leading-relaxed font-light">
+        Tostaduría de especialidad, pastelería recién horneada y un espacio acogedor pensado para hacer una pausa en tu día.
+      </p>
+<div class="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-2 bg-secondary text-on-secondary hover:bg-on-secondary-container transition-all duration-300 rounded-full px-8 py-4 font-label-lg text-label-lg shadow-[0_8px_20px_rgba(156,67,40,0.35)] hover:-translate-y-0.5 active:translate-y-0 text-center flex-1 sm:flex-initial" href="#carta">
+<span>Ver la carta</span>
+<span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-surface backdrop-blur-md transition-all duration-300 rounded-full px-7 py-4 font-label-lg text-label-lg text-center flex-1 sm:flex-initial shadow-sm" href="#ubicacion">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>Cómo llegar</span>
+</a>
+</div>
+<div class="mt-14 pt-8 w-full flex flex-wrap items-center gap-6 sm:gap-12 text-surface-variant/80 font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">verified</span>
+<span>Granos 100% Arábica de Origen</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">pets</span>
+<span>Terraza 100% Pet Friendly</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">wifi</span>
+<span>Espacio Cowork Amable</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. DESTACADOS / HIGHLIGHTS -->
+<section class="w-full py-16 lg:py-24 bg-surface relative">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold block mb-2">Nuestra Propuesta</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container">El ritmo pausado del buen café</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Cada detalle en Pucará está curado para transformar un café matutino en una experiencia que alegra la rutina.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-low rounded-3xl p-8 hover:bg-surface-container transition-all duration-300 shadow-[0_8px_24px_-4px_rgba(44,24,16,0.04)] hover:shadow-[0_16px_32px_-6px_rgba(44,24,16,0.08)] hover:-translate-y-1 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-secondary mb-6 group-hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">coffee_maker</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-3">Café de Especialidad</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Granos seleccionados de origen ético, tostados con perfil de autor y calibrados a diario por nuestros apasionados baristas.
+            </p>
+</div>
+<div class="mt-6 pt-4 flex items-center gap-2 text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+<span>Orígenes rotativos</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-low rounded-3xl p-8 hover:bg-surface-container transition-all duration-300 shadow-[0_8px_24px_-4px_rgba(44,24,16,0.04)] hover:shadow-[0_16px_32px_-6px_rgba(44,24,16,0.08)] hover:-translate-y-1 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-secondary mb-6 group-hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">bakery_dining</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-3">Pastelería Casera</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Queques húmedos, medialunas artesanales y delicias dulces horneadas cada mañana en casa con ingredientes nobles y de campo.
+            </p>
+</div>
+<div class="mt-6 pt-4 flex items-center gap-2 text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+<span>Horneado al amanecer</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-low rounded-3xl p-8 hover:bg-surface-container transition-all duration-300 shadow-[0_8px_24px_-4px_rgba(44,24,16,0.04)] hover:shadow-[0_16px_32px_-6px_rgba(44,24,16,0.08)] hover:-translate-y-1 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center text-secondary mb-6 group-hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">deck</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-3">Terraza Pet Friendly</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Un patio tranquilo para venir con tu perrito o leer tranquilo bajo la sombra de los árboles en el corazón residencial de Ñuñoa.
+            </p>
+</div>
+<div class="mt-6 pt-4 flex items-center gap-2 text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+<span>Agua fresca para peludos</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. CARTA (MENU) -->
+<section class="w-full py-20 lg:py-28 bg-surface-container-low/70 scroll-mt-20 relative" id="carta">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold block mb-2">Nuestra Carta</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-4">Sabores preparados con tiempo y dedicación</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Cafés, desayunos, brunch, sándwiches y pastelería casera para cualquier hora del día.
+        </p>
+</div>
+<!-- Category Filter Pills (Interactive JS) -->
+<div class="flex items-center justify-center gap-2 flex-wrap mb-12" id="menu-filters">
+<button class="menu-tab-btn active px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary-container text-surface shadow-sm" data-category="all" type="button">
+          Todo
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface hover:bg-surface-container-high" data-category="cafes" type="button">
+          Cafés
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface hover:bg-surface-container-high" data-category="frios" type="button">
+          Cafés Fríos
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface hover:bg-surface-container-high" data-category="bebidas" type="button">
+          Bebidas Especiales
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface hover:bg-surface-container-high" data-category="menu" type="button">
+          Desayunos y Brunch
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface hover:bg-surface-container-high" data-category="sandwiches" type="button">
+          Sándwiches
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface hover:bg-surface-container-high" data-category="tortas" type="button">
+          Tortas Caseras
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface hover:bg-surface-container-high" data-category="tartas" type="button">
+          Tartas y Kuchen
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface hover:bg-surface-container-high" data-category="cheesecake" type="button">
+          Cheesecakes
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface hover:bg-surface-container-high" data-category="dulces" type="button">
+          Delicias y Dulces
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface hover:bg-surface-container-high" data-category="helados" type="button">
+          Helados y Combinaciones
+        </button>
+</div>
+<!-- Menu Grid: carta completa según Uber Eats -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8" id="menu-items-grid">
+<div class="menu-item-card" data-category="cafes">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cafe-espresso.jpg" alt="Café Espresso" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café Clásico</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Café Espresso</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$3.800</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Café espresso, corto y concentrado, con crema dorada.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="cafes">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cafe-espresso-doble.jpg" alt="Café Espresso Doble" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café Clásico</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Café Espresso Doble</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$4.650</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Doble espresso con crema dorada, cuerpo intenso y final aromático.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="cafes">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cafe-lungo.jpg" alt="Café Lungo" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café Clásico</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Café Lungo</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$3.850</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Espresso largo con mayor volumen de agua, para una taza más extensa.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="cafes">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cafe-americano.jpg" alt="Café Americano" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café Clásico</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Café Americano</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$3.950</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Espresso alargado con agua caliente.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="cafes">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cortado.jpg" alt="Cortado" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café con Leche</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Cortado</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$4.500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Espresso con leche al vapor en proporción corta y espuma suave.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="cafes">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cortado-doble.jpg" alt="Cortado Doble" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café con Leche</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Cortado Doble</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.400</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Doble espresso cortado con leche caliente y fina capa de espuma.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="cafes">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/capuccino.jpg" alt="Capuccino" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Favorito</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Capuccino</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.300</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Espresso con leche vaporizada y espuma cremosa, al estilo capuchino.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="cafes">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/latte.jpg" alt="Latte" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café con Leche</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Latte</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Espresso con leche vaporizada, cremoso y con suave capa de espuma.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="cafes">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/mocaccino.jpg" alt="Mocaccino" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café con Leche</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Mocaccino</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.600</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Café con leche y chocolate, coronado con crema batida y cacao.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="cafes">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/mocaccino-doble.jpg" alt="Mocaccino Doble" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café con Leche</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Mocaccino Doble</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$6.800</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Mocaccino doble: café con leche y chocolate, coronado con crema batida y cacao.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="frios">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cafe-helado.jpg" alt="Café Helado" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café Frío</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Café Helado</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$10.300</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Espresso frío con helado artesanal de vainilla.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="frios">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/affogato.jpg" alt="Affogato" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café Frío</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Affogato</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$6.900</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Bola de helado artesanal bañada en espresso caliente.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="frios">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/ice-latte.jpg" alt="Ice Latte" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café Frío</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Ice Latte</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.300</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Café espresso con leche y hielo, suave y refrescante.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="frios">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cafe-frappe.jpg" alt="Café Frappé" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Café Frío</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Café Frappé</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.300</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Café batido con hielo, leche y un toque dulce.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="bebidas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/capuccino-vainilla.jpg" alt="Capuccino Vainilla" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Especial</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Capuccino Vainilla</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$6.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Dulce y cremoso.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="bebidas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cafe-bombon.jpg" alt="Café Bombón" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Especial</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Café Bombón</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.400</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Dulce, con leche condensada y toques de canela.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="bebidas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/chocolate-caliente.jpg" alt="Chocolate Caliente" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Especial</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Chocolate Caliente</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.400</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Artesanal, hecho con cacao real y leche.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="menu">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/desayuno-delicias.jpg" alt="Desayuno Delicias" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Desayuno</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Desayuno Delicias</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$7.500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Café americano, tostadas con mantequilla y mermelada casera.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="menu">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/energia-dia.jpg" alt="Energía Día" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Desayuno</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Energía Día</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$7.400</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Café americano y bocado del día.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="menu">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/brunch-del-huerto.jpg" alt="Brunch del Huerto" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Brunch</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Brunch del Huerto</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$17.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Café capuccino, tostadas con palta cremosa y jamón, paila de huevo y más.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="menu">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/brunch-del-huerto.jpg" alt="Brunch Encantado" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Brunch</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Brunch Encantado</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$20.800</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Yogurt con granola, sándwich de queso, tomate y orégano en pan ciabatta y más.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="menu">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/platos-con-acompanamiento.jpg" alt="Platos con Acompañamiento" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Almuerzo</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Platos con Acompañamiento</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$12.200</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Elige entre puré cremoso de papas, arroz graneado, ensalada fresca o papas fritas.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="menu">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/plato-del-dia.jpg" alt="Plato del Día" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Almuerzo</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Plato del Día</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$16.094</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Consulta la preparación de hoy.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="sandwiches">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/sandwich-mixto.jpg" alt="Sándwich Mixto" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Sándwich</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Sándwich Mixto</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$6.900</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Jamón y queso fundido.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="sandwiches">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/ave-palta.jpg" alt="Ave Palta" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Sándwich</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Ave Palta</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$9.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Pollo con palta fresca.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="sandwiches">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/sandwich-vegetariano.jpg" alt="Sándwich Vegetariano" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Sándwich</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Sándwich Vegetariano</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$8.500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Tomate, palta, quesillo y hojas frescas. Vegetariano.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="sandwiches">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/sandwich-churrasco-con-queso.jpg" alt="Sándwich Churrasco con Queso" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Sándwich</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Sándwich Churrasco con Queso</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$10.600</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Churrasco con queso.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="sandwiches">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/sandwich-italiano.jpg" alt="Sándwich Italiano" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Sándwich</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Sándwich Italiano</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$12.300</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Pan ciabatta, tomate, palta y carne.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tortas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/panqueque-chocolate.jpg" alt="Panqueque Chocolate" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Torta Casera</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Panqueque Chocolate</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$6.500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Capas de panqueque de chocolate con crema suave, decorado con hilos de chocolate.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tortas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/selva-negra.jpg" alt="Selva Negra" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Torta Casera</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Selva Negra</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$6.500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Capas de bizcocho de chocolate con crema chantilly, virutas de chocolate y cereza.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tortas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/mil-hojas.jpg" alt="Mil Hojas" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Torta Casera</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Mil Hojas</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$6.500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Capas de hojaldre crocante con crema y mermelada, cubierta con crocante de hojaldre.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tortas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/tres-leches.jpg" alt="Tres Leches" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Torta Casera</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Tres Leches</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$6.500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Torta húmeda de bizcocho bañado en tres leches y cubierta con crema.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tartas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/tarta-de-nuez.jpg" alt="Tarta de Nuez" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Porción</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Tarta de Nuez</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.900</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Clásica tarta de nuez, cubierta dorada con nuez al centro. Contiene nueces.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tartas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/kuchen-de-manzana.jpg" alt="Kuchen de Manzana" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Porción</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Kuchen de Manzana</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.900</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Kuchen clásico de manzana con cubierta enrejada y masa dorada.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tartas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/pie-de-limon.jpg" alt="Pie de Limón" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Porción</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Pie de Limón</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.900</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Con relleno cremoso de limón y merengue tostado.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tartas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/streusel.jpg" alt="Streusel" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Porción</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Streusel</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$5.900</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Kuchen con cubierta crujiente de streusel.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tartas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/kuchen-de-manzana-familiar.jpg" alt="Kuchen de Manzana Familiar" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Familiar</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Kuchen de Manzana Familiar</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$21.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Kuchen entero para compartir.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tartas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/streusel-familiar.jpg" alt="Streusel Familiar" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Familiar</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Streusel Familiar</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$21.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Streusel entero para compartir.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tartas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/tarta-nuez-familiar.jpg" alt="Tarta Nuez Familiar" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Familiar</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Tarta Nuez Familiar</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$21.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Tarta de nuez entera para compartir.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="tartas">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/pie-de-limon.jpg" alt="Pie de Limón Familiar" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Familiar</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Pie de Limón Familiar</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$21.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Pie de limón entero para compartir.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="cheesecake">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cheesecake-de-frambuesa-familiar.jpg" alt="Cheesecake de Frambuesa Familiar" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Familiar</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Cheesecake de Frambuesa Familiar</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$25.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Cheesecake artesanal de frambuesa.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="cheesecake">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cheesecake-de-maracuya-familiar.jpg" alt="Cheesecake de Maracuyá Familiar" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Familiar</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Cheesecake de Maracuyá Familiar</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$25.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Cheesecake artesanal de maracuyá.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="dulces">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/delicia-de-manjar.jpg" alt="Delicia de Manjar" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Delicias</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Delicia de Manjar</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$3.800</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Alfajor de galleta relleno de manjar.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="dulces">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/delicia-de-frambuesa.jpg" alt="Delicia de Frambuesa" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Delicias</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Delicia de Frambuesa</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$3.800</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Galleta rellena de frambuesa.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="dulces">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/delicia-de-damasco.jpg" alt="Delicia de Damasco" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Delicias</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Delicia de Damasco</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$3.800</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Preparación frutal a base de damasco.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="dulces">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/mendocinos-caseros.jpg" alt="Mendocinos Caseros" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Popular</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Mendocinos Caseros</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$3.900</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Rellenos de manjar, bañados en chocolate.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="dulces">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/alfajor-de-maicena.jpg" alt="Alfajor de Maicena" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Artesanal</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Alfajor de Maicena</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$3.880</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Galletas de maicena rellenas de manjar.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="dulces">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/profiteroles.jpg" alt="Profiteroles" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Artesanal</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Profiteroles</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$2.900</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Con crema pastelera y cobertura de chocolate.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="dulces">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/muffins-de-chispas-de-chocolate.jpg" alt="Muffins de Chispas de Chocolate" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Artesanal</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Muffins de Chispas de Chocolate</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$2.600</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Muffins artesanales, esponjosos y con chispas de chocolate en cada bocado.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="dulces">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/brownie-tradicional.jpg" alt="Brownie Tradicional" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Artesanal</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Brownie Tradicional</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$3.700</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Brownie tradicional de chocolate, denso y suave al paladar.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="dulces">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/brownie-vegano.jpg" alt="Brownie Vegano" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Vegano</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Brownie Vegano</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$3.700</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Sin ingredientes de origen animal.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="dulces">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/cake-pop.jpg" alt="Cake Pop" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Artesanal</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Cake Pop</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$1.850</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Bolita de queque en palito, cubierta de chocolate.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="helados">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/helados-cremosos.jpg" alt="Helados Cremosos" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">500 ml</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Helados Cremosos</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$11.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Helados artesanales de textura suave y cremosa.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="helados">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/helados-de-agua.jpg" alt="Helados de Agua" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">500 ml</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Helados de Agua</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$11.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Refrescantes helados de agua artesanales, sabores a elección.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="helados">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/brownie-con-helado.jpg" alt="Brownie con Helado" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Combinación</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Brownie con Helado</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$9.900</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Brownie con dos sabores de helado.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item-card" data-category="helados">
+<div class="bg-surface rounded-2xl p-4 sm:p-5 flex gap-4 sm:gap-5 items-start shadow-[0_4px_16px_rgba(44,24,16,0.03)] hover:shadow-[0_12px_28px_rgba(44,24,16,0.07)] transition-all duration-300 h-full">
+<img src="carta/milkshake-artesanal.jpg" alt="Milkshake Artesanal" loading="lazy" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0"/>
+<div class="flex-1 min-w-0">
+<div>
+<div class="flex justify-between items-start gap-3 mb-1">
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2">Combinación</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Milkshake Artesanal</h3>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold whitespace-nowrap">$9.900</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Batido de leche artesanal, cremoso y espeso.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Banner Uber Eats -->
+<div class="mt-12 p-6 rounded-2xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">delivery_dining</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">
+            ¿Prefieres recibirlo en casa? Pide toda nuestra carta por Uber Eats.
+          </p>
+</div>
+<a class="inline-flex items-center gap-2 bg-primary-container text-surface hover:bg-secondary transition-all rounded-full px-6 py-3 font-label-md text-label-md whitespace-nowrap" href="https://www.ubereats.com/cl/store/delicias-de-pucara-santiago/Z13zj2gqUpO3xnf15wjq-g" rel="noopener noreferrer" target="_blank">
+          Pedir en Uber Eats <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+</div>
+</div>
+</section>
+<!-- 4. NOSOTROS -->
+<section class="w-full py-20 lg:py-32 bg-surface overflow-hidden scroll-mt-20" id="nosotros">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left photo showcase with warm overlapping accents -->
+<div class="lg:col-span-6 relative">
+<div class="relative z-10 rounded-3xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(44,24,16,0.18)]">
+<img class="w-full h-[460px] object-cover" data-alt="Warm welcoming portrait of Chilean coffee shop family and passionate young barista behind a rustic oak coffee counter with polished brass espresso machine smiling naturally in cozy cafe atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLRNSNST910_PzcyMk5qD0miNzjoWGpjD4VYFRdUX0bo9ObbryEKRTNK_iScUn296QYcvXZNqnvQUTpD2UUNzHOQcvKc239Nfq1mBkElDIZA2Jqh1sYsYTuKsroQ1urOR-wy0UKxeewqta1yqTgNZdouUJpXc9zcElFGtT7aNjZbkgMPRfdbRskDs3cQQ1cnU83jB30J-giey1KNyLT2e4RlHr3Bupbuoqh0PHpf6Enif7WerFeuDYRg"/>
+</div>
+<div class="absolute -top-6 -left-6 w-32 h-32 rounded-full bg-secondary-fixed/40 -z-0 blur-2xl"></div>
+</div>
+<!-- Right story content -->
+<div class="lg:col-span-6 flex flex-col items-start">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold block mb-3">Nuestra Esencia</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-6 leading-tight">
+            Una historia que nació entre tazas y vecinos
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-8">
+            Delicias de Pucará nació del anhelo de rescatar la vida de barrio en Ñuñoa. Somos una familia de apasionados por el café que transformó una casona tradicional en un refugio para los vecinos: un lugar donde te saludamos por tu nombre, el aroma a pan recién salido del horno te da la bienvenida y cada taza se prepara con paciencia y cariño. Creemos en el comercio justo, en la calidez de una buena conversación y en ser ese alto en el camino que alegra tu rutina.
+          </p>
+<div class="grid grid-cols-2 gap-6 w-full pt-4 mb-8">
+<div class="bg-surface-container-low p-5 rounded-2xl">
+<span class="font-headline-md text-headline-md text-secondary font-semibold block mb-1">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Trazabilidad de origen y comercio justo</span>
+</div>
+<div class="bg-surface-container-low p-5 rounded-2xl">
+<span class="font-headline-md text-headline-md text-secondary font-semibold block mb-1">08:00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pan y queques recién salidos del horno cada día</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. GALERÍA -->
+<section class="w-full py-16 lg:py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold block mb-2">Momentos &amp; Espacios</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Postales de la vida en Pucará</h2>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary hover:text-on-secondary-container transition-colors" href="https://instagram.com/deliciasdepucara" rel="noopener noreferrer" target="_blank">
+<span>Ver más en Instagram</span>
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Photo 1 -->
+<div class="group relative rounded-3xl overflow-hidden shadow-sm h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Artisan barista carefully pouring silky microfoam milk creating complex swan latte art into a handmade rustic ceramic cup in warm sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATqPG0AnDaWvKeWZSmE6V_0uBjy-NY26npVjkwGGugzXp9QVMpgv5H4NxmOSDxq1ADp3YRMYKxmbFnwHJptdkv7Rt_aL0Ak_OViUXsoVbMjzeFe0vpYLfLWKsRjNs4NCiKdcwpcWxiNHYAYbR_kinoMLHt4_ES88AeEYB_LGU-OGjcw6j9QyPD9Yys-B4O6ug2vHPaSTEbaQ-FHi2LRdfqUk4KI6stdHIFxzcsEl5x9U4YX297GRDuPw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="font-label-md text-label-md text-surface font-medium">Latte art servido en greda artesanal</p>
+</div>
+</div>
+<!-- Photo 2 -->
+<div class="group relative rounded-3xl overflow-hidden shadow-sm h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Golden crisp flaky freshly baked butter croissant resting on a handmade white clay artisan plate with gentle morning studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAALvCwqDd-JOoTqRiTvtLosc6IUFdRI4gsnLy478wFgKY22fbQhDQBgHDMTVw4aJJiQr8Ie5Q25IJ7rSz7Rq6mmwaz4MI7xOfylg6J-BT33wjRSLFTckbibZ0PKZ7FrahhFZ7q4XvRsNfbTBHYi2jkpRpQEkYAMDd0KD0oKEPQx4crWtIiqlHRBkvNBlqzBtcWJsmKWK-8FNju5xONH770exMTGzvi-Ros9347KQiV5TIJpFL9tV36Bg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="font-label-md text-label-md text-surface font-medium">Croissant crujiente recién horneado</p>
+</div>
+</div>
+<!-- Photo 3 -->
+<div class="group relative rounded-3xl overflow-hidden shadow-sm h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Cozy sun-dappled patio terrace cafe with green leafy tree shade, wooden deck tables, guests with small happy dog relaxing in Ñuñoa Santiago" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDap4Ejhe_rMaAl-LUxvkttOJBus4pvBzNmMuJzCouVK9UK-tyy5PhfZX0sIcQ5ld1ENnuF_vM9zycqJ1dm3hzDvaPtzPbYekyNFAgAfyxoHTjb_JRxqq6rImn8_4jxrot8I6a5FAfiPuRyNsqnwlaesO3oeobXVOm7hDQlFG75hQTHYsJAWuOYkEVAGiPPit9mW90inK_kBUm6pkIbvp_AYvis05kkIUoOA87If6L2eZ-4zVvXCi0TGQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="font-label-md text-label-md text-surface font-medium">Terraza exterior pet friendly</p>
+</div>
+</div>
+<!-- Photo 4 -->
+<div class="group relative rounded-3xl overflow-hidden shadow-sm h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Rustic wooden table with glass V60 coffee dripper carafe, an open paperback book, slice of lemon poppyseed cake and glasses in morning sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkh7Q6wz67LCzuXgYsjnOiq_Kxin9rvjEQbZGZUPDOXrMKoRZ_yDg1tSsyzspMffBxDPTe4KNCqbs955UmcQNcGaiFWvepAzC5M-ymMgGJUuPyK5hhMG4l4-7f9t_kSmOnFIQlXjft3ZaejBU0AC27p6jCff4mrYdCCNXVsoB-tqCs8nZzflnTi4UlLAJM1gocfriidAjMmqmioTdwX9GqhwzaenkfNsgsKoJqWqnJPaeL46GNK1p-QQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="font-label-md text-label-md text-surface font-medium">Tardes de lectura y café filtrado</p>
+</div>
+</div>
+<!-- Photo 5 -->
+<div class="group relative rounded-3xl overflow-hidden shadow-sm h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Artisanal glass bakery display case showing fresh raspberry rustic tarts, cinnamon rolls with glaze and savory quiches in a cozy cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1PdlxlRsaU7ChBNS11G0KIwVc5rpSxNVCYPHa9qFbiwe86983JRTDFNeLWYNRm6zVUEZcmi071ciKxSDCvk-yyQmpL_zHe8HLMCva89s-Mmw62CoYS67G00HKOi7CtDRZdIBFWLMyDq02KoKwIBXwEk4lqF5-sdBVk5cQO4WEpFt4w9Z8ykezK5erEov-Y54GMRjgixzIYl0DfzVg9XakOBDnzFHnAJc5ZGxMc2ovW73rRXaAgcpuwg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="font-label-md text-label-md text-surface font-medium">Vitrina de pastelería fresca del día</p>
+</div>
+</div>
+<!-- Photo 6 -->
+<div class="group relative rounded-3xl overflow-hidden shadow-sm h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Warm atmospheric interior of neighborhood coffee shop with natural wood shelving, terracotta pots, coffee beans bags and soft amber lamps" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBI2S4ybjjLWD1iWZDQ9QH4htVifigKMAq3lVRqxXa-KiaIYuDllLF1EiEDEyiQvmKYE_kJw3wBh6VXQZZhHML9XV3DFrujj2vw8sY9mQulcEuCjmkpYeK-2TjNuZ6aN5WTUdIFsZDd9jquFrPolfOCwKiI0WNwBvYe0S0IYHXYStDf8H8lvVCTaVGDHVMk55-XICKu3h_JXrb0GzvW00qQaArAjiDrsUCwc_36DlviSjIbw10_p9Y1g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="font-label-md text-label-md text-surface font-medium">Rincones cálidos para desconectar</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. RESEÑAS -->
+<section class="w-full py-20 lg:py-28 bg-surface">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold block mb-2">Comunidad Vecinal</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-3">Lo que dicen nuestros vecinos</h2>
+<div class="flex items-center justify-center gap-1 text-secondary mb-2">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant font-medium">4.9 de 5 estrellas en reseñas de Google<br><span style="background:#fff3b0;border:1px dashed #c9a400;border-radius:6px;padding:0 6px;color:#5a4a00">Reseñas de ejemplo: reemplazar por reseñas reales de Google</span></p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="bg-surface-container-low p-8 rounded-3xl flex flex-col justify-between shadow-[0_4px_20px_rgba(44,24,16,0.04)]">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic mb-8">
+              "El mejor café de Pucará por lejos. La atención es un amor y el flat white con el queque de limón son adictivos. Voy casi todas las mañanas con mi perrita."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-sm">
+              CM
+            </div>
+<div>
+<p class="font-label-md text-label-md text-primary-container font-semibold">Camila Morales</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Vecina de Ñuñoa</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-low p-8 rounded-3xl flex flex-col justify-between shadow-[0_4px_20px_rgba(44,24,16,0.04)]">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic mb-8">
+              "Ambiente cálido, música a volumen perfecto para trabajar o conversar y una pastelería que se nota 100% casera. Un verdadero tesoro en el barrio."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary-container flex items-center justify-center font-bold text-sm">
+              MV
+            </div>
+<div>
+<p class="font-label-md text-label-md text-primary-container font-semibold">Matías Valenzuela</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Cliente Habitual</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-low p-8 rounded-3xl flex flex-col justify-between shadow-[0_4px_20px_rgba(44,24,16,0.04)]">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic mb-8">
+              "La terraza es preciosa y el tostón con palta es supremo. Se nota el cariño de la familia en cada detalle. 10 de 10."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-sm">
+              FS
+            </div>
+<div>
+<p class="font-label-md text-label-md text-primary-container font-semibold">Francisca Silva</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Vecina de Ñuñoa</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. UBICACIÓN Y HORARIOS -->
+<section class="w-full py-20 lg:py-28 bg-surface-container-low/60 scroll-mt-20" id="ubicacion">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold block mb-2">Visítanos</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-3">Encuéntranos en tu barrio</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Una casona restaurada con patio sombreado, bicicletero y el café esperándote caliente.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Interactive Stylized Location Map Container -->
+<div class="lg:col-span-7 bg-surface rounded-3xl p-4 shadow-[0_8px_30px_rgba(44,24,16,0.06)] flex flex-col gap-4">
+<div class="relative w-full h-[380px] rounded-2xl overflow-hidden" data-location="Pucará 4251, Ñuñoa, Región Metropolitana, Santiago, Chile" style="">
+<!-- Simulated stylized aesthetic interactive pin card -->
+<div class="absolute inset-0 bg-surface-container flex flex-col items-center justify-center p-6 text-center">
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-lg mb-4 animate-bounce">
+<span class="material-symbols-outlined text-[32px]">local_cafe</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary-container mb-1">Delicias de Pucará</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-6">Pucará 4251, Ñuñoa (entre Coventry y Emilia Téllez)</p>
+<div class="flex flex-wrap gap-3 justify-center">
+<a class="inline-flex items-center gap-2 bg-primary-container text-surface px-5 py-2.5 rounded-full font-label-md text-label-md shadow-sm hover:bg-primary transition-colors" href="https://maps.google.com/?q=Pucara+4251+Nunoa+Santiago" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">map</span>
+<span>Abrir en Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-surface text-primary-container px-5 py-2.5 rounded-full font-label-md text-label-md shadow-sm hover:bg-surface-container transition-colors" href="https://waze.com/ul?q=Pucara+4251+Nunoa" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">navigation</span>
+<span>Abrir en Waze</span>
+</a>
+</div>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low rounded-2xl flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-[26px] shrink-0">pedal_bike</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Estacionamiento para bicicletas seguro disponible dentro del patio · A sólo 8 minutos caminando desde las estaciones de Metro Simón Bolívar o Plaza Egaña.
+            </p>
+</div>
+</div>
+<!-- Details, Schedules and Contact Info -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Schedules Card -->
+<div class="bg-surface rounded-3xl p-8 shadow-[0_8px_30px_rgba(44,24,16,0.06)]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary text-[24px]">schedule</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Horarios de Atención</h3>
+</div>
+<div class="space-y-4 font-body-md text-body-md">
+<div class="flex justify-between items-center py-2">
+<span class="text-on-surface-variant">Lunes a Viernes</span>
+<span class="font-semibold text-primary-container">08:30 a 20:00 hrs</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="text-on-surface-variant">Sábados y Domingos</span>
+<span class="font-semibold text-primary-container"><span style="background:#fff3b0;border:1px dashed #c9a400;border-radius:6px;padding:0 6px;color:#5a4a00">08:30 a 20:30 hrs</span></span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="text-on-surface-variant">Días Festivos</span>
+<span class="font-semibold text-secondary"><span style="background:#fff3b0;border:1px dashed #c9a400;border-radius:6px;padding:0 6px;color:#5a4a00">09:00 a 19:30 hrs</span></span>
+</div>
+</div>
+</div>
+<!-- Direct Communication Card -->
+<div class="bg-surface rounded-3xl p-8 shadow-[0_8px_30px_rgba(44,24,16,0.06)]">
+<div id="contacto" class="scroll-mt-24 flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary text-[24px]">contact_support</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Contacto &amp; Pedidos</h3>
+</div>
+<div class="space-y-4 font-body-md text-body-md mb-6">
+<a class="flex items-center gap-3 text-on-surface hover:text-secondary transition-colors group" href="tel:+56229876543">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary text-[20px]">call</span>
+<span><span style="background:#fff3b0;border:1px dashed #c9a400;border-radius:6px;padding:0 6px;color:#5a4a00">+56 2 2987 6543</span></span>
+</a>
+<a class="flex items-center gap-3 text-on-surface hover:text-secondary transition-colors group" href="https://wa.me/56987654321" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary text-[20px]">chat</span>
+<span><span style="background:#fff3b0;border:1px dashed #c9a400;border-radius:6px;padding:0 6px;color:#5a4a00">+56 9 8765 4321</span> (WhatsApp)</span>
+</a>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">place</span>
+<span>Pucará 4251, Ñuñoa, Santiago</span>
+</div>
+</div>
+<a class="w-full flex items-center justify-center gap-2 bg-secondary text-on-secondary hover:bg-on-secondary-container transition-all py-3.5 rounded-full font-label-md text-label-md shadow-sm" href="https://wa.me/56987654321" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Encargar para llevar</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Script for Interactive Menu Filtering -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.menu-tab-btn');
+      const menuCards = document.querySelectorAll('.menu-item-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const category = btn.getAttribute('data-category');
+
+          // Toggle button styles
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-surface', 'shadow-sm');
+            b.classList.add('bg-surface-container', 'text-on-surface');
+          });
+          btn.classList.remove('bg-surface-container', 'text-on-surface');
+          btn.classList.add('bg-primary-container', 'text-surface', 'shadow-sm');
+
+          // Filter card visibility
+          menuCards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</div></main><aside class="fixed bottom-6 right-6 z-40 flex items-center group"><span class="hidden md:inline-block mr-3 px-3 py-1.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-[0_8px_24px_-4px_rgba(44,24,16,0.12)] opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">¡Pide por WhatsApp!</span><a aria-label="¡Pide por WhatsApp!" class="w-14 h-14 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-[0_12px_28px_-4px_rgba(156,67,40,0.35)] hover:scale-105 active:scale-95 transition-transform" href="https://wa.me/56987654321" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[28px]">chat</span></a></aside><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin py-space-xl flex flex-col md:flex-row items-center md:items-start justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs text-center md:text-left"><div class="flex items-center gap-3"><img alt="Logo Delicias de Pucará" class="h-20 w-auto object-contain" src="logo.png"/><span class="font-headline-sm text-headline-sm text-primary-container">Delicias de Pucará</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1">Café de especialidad, pastelería artesanal y el encanto sereno de la vida de barrio en Ñuñoa.</p></div><div class="flex flex-col items-center md:items-start gap-2 text-center md:text-left"><span class="font-label-md text-label-md text-primary font-semibold uppercase tracking-wider">Visítanos &amp; Contacto</span><p class="font-body-sm text-body-sm text-on-surface-variant">Pucará 4251, Ñuñoa, Región Metropolitana, Santiago</p><div class="flex items-center gap-4 mt-1"><a class="font-label-md text-label-md text-secondary hover:text-on-secondary-container transition-colors flex items-center gap-1" href="https://instagram.com/deliciasdepucara" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">photo_camera</span><span>@deliciasdepucara</span></a><a class="font-label-md text-label-md text-secondary hover:text-on-secondary-container transition-colors flex items-center gap-1" href="https://wa.me/56987654321" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">call</span><span><span style="background:#fff3b0;border:1px dashed #c9a400;border-radius:6px;padding:0 6px;color:#5a4a00">+56 9 8765 4321</span></span></a></div></div></div><div class="bg-surface-container py-space-md"><div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin text-center font-body-sm text-body-sm text-on-surface-variant">© 2026 Delicias de Pucará. Hecho con cariño de barrio.</div></div></footer><script>const toggle = document.getElementById('mobile-nav-toggle'); const menu = document.getElementById('mobile-menu'); if(toggle && menu){ toggle.addEventListener('click', () => { menu.classList.toggle('hidden'); }); }</script><script>
+document.querySelectorAll('#mobile-menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mobile-menu').classList.add('hidden');});});
+(function(){var links=document.querySelectorAll('nav a[data-path]');var ids=['inicio','carta','nosotros','ubicacion','contacto'];
+function upd(){var cur='inicio';ids.forEach(function(id){var el=document.getElementById(id);if(el&&el.getBoundingClientRect().top<140)cur=id;});
+links.forEach(function(a){var on=a.getAttribute('data-path')===cur;var cls=a.parentElement.getAttribute('data-active-classes').split(' ');
+cls.forEach(function(c){a.classList.toggle(c,on);});a.classList.toggle('text-on-surface-variant',!on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});}
+window.addEventListener('scroll',upd,{passive:true});upd();})();
+</script>
+</body></html>
